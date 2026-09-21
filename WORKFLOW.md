@@ -158,7 +158,7 @@ The user confirmed these seven Multica statuses from the status menu: `Backlog`,
 | `done` | `Done` |
 | `blocked` (parked) | `Blocked` |
 | return label / marker | No "changes requested" status exists. A return is `In Progress` plus reassignment and a pointer to the latest `reviews/` entry (see "The return procedure"). Whether to add a label is unverified. |
-| task dependency (kickoff chain) | unverified |
+| task dependency (kickoff chain) | verified (parent-child linking works; enforcement does not) |
 
 Multica handles the transitions between its statuses. `Backlog`, `Todo`, and `Cancelled` are not mapped: they
 belong to Multica, which is responsible for them, and this workflow does not define their use. That includes
@@ -166,4 +166,8 @@ which status a stage's issue holds before its predecessor is `Done`.
 
 Still unverified: what triggers a profile's run (assigning an issue, changing its status, or something else),
 whether Multica enforces "who can move what" or the 70% gate itself (until verified, the profiles' own rules are
-the only enforcement), whether issues can be linked as dependencies, and whether labels are used for returns.
+the only enforcement), and whether labels are used for returns.
+
+Verified: parent-child dependency linking works in Multica (issues can be linked via `--parent`),
+but enforcement does not — setting a parent to `Done` does not automatically change the child's status.
+The Head Scriptwriter manually advances each stage using the `advance` skill.
