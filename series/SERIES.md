@@ -5,4 +5,4 @@
   - [ ] Scripted  [ ] Filmed  [ ] Published
 - Short-form (each supports the long-form episode):
   - [ ] (none planned yet)
-- Pipeline: [ ] Artist  [ ] Architect  [ ] Writer  [ ] Wizard
+- Pipeline: [x] Artist  [ ] Architect  [ ] Writer  [ ] Wizard
