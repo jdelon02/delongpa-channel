@@ -1,10 +1,8 @@
-# Building an Agentic Company
-> Join me as I try to create this, and maybe we can learn something along the way…
-
-## Overarching Theme
-Me building an agentic company from scratch, and each episode (hopefully) will be updates, tutorials, etc.. that I learn along the way.
-
-## Audience
-Two main targets: tech nerds like me, who want to dig into the real "build this from scratch following best practices as best we can." And people who are thinking about starting an Agentic company, and want to see how my journey goes.
-
-## Season 1
+### S01E01 — Are the AI CEO's right, can you really start and run a successful agentic AI company? Or, are they just blowing smoke up our…
+- Folder: `episodes/s01e01-are-the-ai-ceos-right/`
+- Audience: Both series audiences: tech nerds who want to dig into building from scratch following best practices, and people thinking about starting an Agentic company who want to see how the journey goes
+- Long-form: Are the AI CEO's right, can you really start and run a successful agentic AI company? Or, are they just blowing smoke up our…
+  - [ ] Scripted  [ ] Filmed  [ ] Published
+- Short-form (each supports the long-form episode):
+  - [ ] (none planned yet)
+- Pipeline: [ ] Artist  [ ] Architect  [ ] Writer  [ ] Wizard
