@@ -1,5 +1,7 @@
 # SKILLS: BurgoyneBlue
 
+<project_source project="delongpa" file="SKILLS" format="hybrid-xml-markdown" />
+
 Project-level skills for any agent in this project. All follow `SOUL.md`. Role-specific skills (interviewing,
 scoring, coordinating) live in each profile's own `SKILLS.md`, and the process is in `WORKFLOW.md`. Do not
 restate either.
@@ -7,6 +9,8 @@ restate either.
 ---
 
 ## Skill: orient
+
+<skill_orient>
 
 **Purpose.** Find out where things stand at the start of a session, from evidence.
 
@@ -30,9 +34,11 @@ ls series/head-pending 2>/dev/null
 - Report states only. Never judge whether a stage is good or ready (the Reviewer's log and the Pipeline box are
   the only evidence).
 
----
+</skill_orient>
 
 ## Skill: route
+
+<skill_route>
 
 **Purpose.** Decide where a request belongs, and send it there instead of doing it.
 
@@ -52,9 +58,11 @@ If a request fits none of these, ask Jeremy one question about what he wants (`S
 
 - Never do a stage profile's work yourself, even if it looks quick.
 
----
+</skill_route>
 
 ## Skill: raise-a-decision
+
+<skill_raise_a_decision>
 
 **Purpose.** Put a choice that is Jeremy's to make in front of him, in the issue.
 
@@ -72,9 +80,11 @@ If a request fits none of these, ask Jeremy one question about what he wants (`S
   (`SOUL.md`, rule 4).
 - Publishing, process changes, and deleting or overwriting work always come through here.
 
----
+</skill_raise_a_decision>
 
 ## Skill: propose-process-change
+
+<skill_propose_process_change>
 
 **Purpose.** Suggest a change to `WORKFLOW.md`, a profile, or these five files, without applying it.
 
@@ -92,9 +102,11 @@ If a request fits none of these, ask Jeremy one question about what he wants (`S
 - A change to a scripting profile's source is made in the `scriptwriting` repo and then re-installed, not in an
   installed copy.
 
----
+</skill_propose_process_change>
 
 ## Video pipeline (not yet defined)
+
+<video_pipeline_not_yet_defined>
 
 Placeholder. This section is empty on purpose.
 
@@ -105,3 +117,31 @@ so far, from Jeremy:
 - The whole workflow will be agentic, because he has no video experience.
 - It will have defined places for human intervention, which have not been designed.
 - Publishing is always his call (`SOUL.md`, rule 1).
+
+</video_pipeline_not_yet_defined>
+
+## Skill: tool-lookup
+
+<skill_tool_lookup>
+
+**Purpose.** Answer questions about repository state or history from indexed evidence before
+manual scanning.
+
+### Steps
+
+1. If `.codegraph/` exists, ask CodeGraph first: `codegraph explore "<question>"` (or the
+   `codegraph_explore` MCP tool).
+2. If `.code-review-graph/` exists, use its MCP tools for change review and impact questions
+   (`detect_changes_tool`, `get_impact_radius_tool`, `query_graph_tool`,
+   `semantic_search_nodes_tool`).
+3. If a `docs/knowledge/` bundle exists, use `okf search` / `okf show` / `okf backlinks` for
+   concept context.
+4. Fall back to grep/find or reading files only for what the indexes do not cover.
+
+### Rules
+
+- A missing index directory means skip that tool and say nothing of it; never install or index
+  one yourself (`SOUL.md`, rule 2).
+- Report what the tool showed as evidence, per `STYLE.md` (Citing tool evidence).
+
+</skill_tool_lookup>

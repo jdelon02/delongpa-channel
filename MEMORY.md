@@ -1,9 +1,13 @@
 # MEMORY: BurgoyneBlue
 
+<project_source project="delongpa" file="MEMORY" format="hybrid-xml-markdown" />
+
 Durable facts Jeremy has told you about himself and this project, and lessons from mistakes and corrections.
 This file spans all series and episodes.
 
 ## Rules
+
+<rules>
 
 - Write here only when Jeremy states a fact about himself or his work, or corrects you.
 - Every entry is dated (`YYYY-MM-DD`).
@@ -13,7 +17,11 @@ This file spans all series and episodes.
 - Record Jeremy's own words for facts. Do not infer or embellish. Anything gathered from elsewhere (for example a
   public profile) is not a fact until he confirms it.
 
+</rules>
+
 ## About Jeremy
+
+<about_jeremy>
 
 Format: `YYYY-MM-DD | fact, in Jeremy's words`
 
@@ -29,16 +37,26 @@ Format: `YYYY-MM-DD | fact, in Jeremy's words`
 2026-09-20 | Agents must never do these without his explicit approval: publish or post publicly; change the process itself; delete or overwrite work. He did not choose "spend money" as a hard limit.
 2026-09-20 | Communication habits he chose: one question at a time; answer first, then next step; say "unknown", never guess; explain video jargon.
 
+</about_jeremy>
+
 ## Lessons learned
+
+<lessons_learned>
 
 Mistakes and corrections.
 Format: `YYYY-MM-DD | what went wrong or was corrected | what to do instead`
 
 (none yet)
 
+</lessons_learned>
+
 ## Notes on skills
+
+<notes_on_skills>
 
 Which skills or messages worked well or badly, according to Jeremy's feedback.
 Format: `YYYY-MM-DD | skill | what Jeremy said about it`
 
 (none yet)
+
+</notes_on_skills>
