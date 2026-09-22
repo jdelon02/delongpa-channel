@@ -1,3 +1,11 @@
+---
+type: "project-instructions"
+title: "AGENTS: BurgoyneBlue"
+description: "Repository Markdown source: AGENTS.md."
+tags: ["delongpa", "repository"]
+source_path: "AGENTS.md"
+---
+
 # AGENTS: BurgoyneBlue
 
 <project_source project="delongpa" file="AGENTS" format="hybrid-xml-markdown" />
@@ -12,12 +20,19 @@ adds its own rules on top of these and never loosens them.
 
 Read these before you say anything to Jeremy:
 
-1. `WORKFLOW.md`: how scripting work moves between profiles, the gate, and the task conventions.
+1. `WORKFLOW.md`: the agent directory, `multica-pr-v1` lifecycle, and PR protocol.
 2. `SOUL.md`
 3. `STYLE.md`
 4. `SKILLS.md`
 5. `MEMORY.md`
-6. `series/SERIES.md`, if it exists.
+6. Your own installed profile's `AGENTS.md`, `SOUL.md`, `STYLE.md`, and `SKILL.md`, resolved
+   from `$HERMES_HOME`; follow that profile's load order for creative-method inputs and memory.
+7. `series/SERIES.md`, if it exists.
+
+The project files describe channel context; your installed profile describes your assigned role.
+Both apply. Resolve workflow and assignment rules through `WORKFLOW.md`. A matching scripting
+agent must perform its assigned role here, not redirect Jeremy to launch the same profile again.
+Informational role questions follow the profile's exception to episode-specific startup requirements.
 
 </load_order>
 
@@ -29,11 +44,12 @@ Read these before you say anything to Jeremy:
 |---|---|---|
 | `WORKFLOW.md` | Scripting process | Process change only, with Jeremy's approval |
 | `knowledge/` | Reference material the scripting profiles read | Process change only |
-| `templates/` | Starting files the scripting profiles copy | Process change only |
-| `series/SERIES.md` | Series title, theme, audience, and each episode's entry and Pipeline line | The Artist creates it; the Reviewer ticks boxes |
+| `$HERMES_HOME/templates/` | Installed templates for the current role; copy file artifacts into this repo | Installer manages masters; role fills the copy |
+| `templates/` | Legacy local template copies; not active profile template inputs | Historical reference only |
+| `series/SERIES.md` | Creator-approved series context and episode navigation; old Pipeline boxes are historical | Assigned role within issue scope |
 | `series/VOICE.md` | Jeremy's voice, in his words | The Writer, by interview |
-| `series/episodes/<folder>/` | One folder per episode: stage outputs `01-`…`04-`, `reviews/`, `head-log.md` | The stage profiles, the Reviewer, the Head |
-| `series/head-pending/` | Head logs for episodes whose folder does not exist yet | The Head |
+| `series/episodes/<folder>/` | Stage outputs `01-`…`04-` and episode navigation; existing review/Head logs are historical | Assigned stage agent; Head owns navigation |
+| `series/head-pending/` | Historical Head logs | Retain without updating |
 
 Episode folders are named `s<SS>e<EE>-<slug>`.
 
@@ -43,9 +59,11 @@ Episode folders are named `s<SS>e<EE>-<slug>`.
 
 <repository>
 
-This project is the git repository `git@github.com:jdelon02/delongpa-channel.git`. Committing and pushing are
-Jeremy's call, and pushing publishes work outside this folder. Never force-push, and never delete or rewrite
-history (`SOUL.md`, rule 3).
+This project is the content repository `git@github.com:jdelon02/delongpa-channel.git`.
+Work inside the runtime-supplied checkout. For assigned scripting work, follow WORKFLOW.md's
+issue branch and per-write commit/push rules; do not ask Jeremy to launch a separate session.
+Git publication under that contract does not authorize uploading videos or posting as Jeremy.
+Never force-push or delete/rewrite accepted history (`SOUL.md`, rule 3).
 
 </repository>
 
@@ -53,15 +71,27 @@ history (`SOUL.md`, rule 3).
 
 <two_workflows>
 
-**Scripting (defined).** Four stages, each with its own profile: Artist, Architect, Writer, Wizard, gated by the
-Reviewer and coordinated by the Head Scriptwriter. Jeremy talks to each stage profile directly, because the
-scripts are his. `WORKFLOW.md` is the authority. Do not restate or change it.
+**Scripting (defined).** Artist, Architect, Writer, and Wizard work with Jeremy in this
+content repository. Head Script Writer coordinates Multica issues; The Reviewer reviews and merges
+their PRs. `WORKFLOW.md` contains the authoritative role → exact Multica name → UUID → Hermes
+profile mapping and lifecycle rules. Use mapped UUIDs for assignment, never profile names or fuzzy names.
 
-The profiles' source is the `scriptwriting` repo (`/Users/jdelon02/Projects/scriptwriting/profiles`). They are
-installed as Hermes profiles (`script-artist`, `script-architect`, `script-writer`, `script-wizard`,
-`script-reviewer`, `script-head`) and started against this folder, for example
-`script-artist chat --in /Users/jdelon02/Projects/delongpa`. That launch syntax comes from the scriptwriting
-docs, where it is marked untested. Each profile's live memory is in its own Hermes home, not in this folder.
+The `scriptwriting` repository maintains profile sources and the canonical workflow. Hermes loads
+the installed profile; Multica supplies the issue and this content worktree. Episode work happens
+here. The source repository need not exist in the runtime, and the absence of `profiles/` here is normal.
+Templates come from the current profile's `$HERMES_HOME/templates/`; knowledge and episode files
+come from this checkout. Each profile's private memory stays in its own Hermes home.
+
+**Already running a scripting profile:** verify the executing agent's mapped UUID owns the issue
+and the runtime profile matches its role. Then perform that role's assigned work here under its
+installed instructions and WORKFLOW.md. For example, Script Architect running `script-architect`
+conducts the Architect interview here. Do not route its own work away or launch another Hermes session.
+If identity, ownership, or profile selection conflicts, report the exact mismatch to Head Script Writer;
+never guess a replacement or read another profile's private memory.
+
+**Other agents:** route scripting work to Head Script Writer for assignment. Do not take over a role
+merely because you can read its instructions. Missing prerequisites or rollout verification still block
+the relevant action; a matching profile alone does not authorize bypassing WORKFLOW.md.
 
 **Video production (not defined).** Everything after `Scripted` (filming, editing, thumbnails, titles,
 publishing, and whatever else it turns out to need) is meant to be run by agents with human checkpoints. None of
@@ -75,14 +105,16 @@ anything more than boxes Jeremy ticks. If a request needs this workflow, say it 
 
 <where_work_comes_from_and_where_you_talk>
 
-Work is assigned as Multica issues, and all communication happens in them (see `STYLE.md`). The `multica` CLI is
-installed here, and `multica issue --help` lists its issue commands. `WORKFLOW.md` ("Orchestrator mapping") maps
-the abstract states to Multica's statuses: `In Progress`, `In Review`, `Done`, and `Blocked`. Use only what that
-table confirms, and do not invent status names, labels, or IDs. What it lists as unverified (run triggers,
-dependency links, return labels) stays unverified.
+Work is assigned as Multica issues, and episode communication happens in their history (see
+`STYLE.md`). Multica owns current status and assignment; GitHub owns PR review and merge evidence;
+accepted content is on git main. Follow `WORKFLOW.md` for permitted transitions and recipients.
+`Interview step:` is conversation progress only. Old Pipeline boxes, Phase fields, review scores,
+and Head logs never establish readiness, ownership, or completion.
 
-If you have no way to reach Multica, say so. State the exact actions you would take instead of claiming them
-(`SOUL.md`, rule 6).
+If a required tool, issue field, prerequisite, or verified handoff mechanism is missing, report the
+specific blocker to Head. Do not claim a transition occurred or substitute a manual profile launch.
+Deployment evidence lives in `docs/validation/multica-pr-workflow.md`; instructions alone do not
+prove live capability. Updating this checkout does not update an existing Multica worktree automatically.
 
 </where_work_comes_from_and_where_you_talk>
 
@@ -91,9 +123,10 @@ If you have no way to reach Multica, say so. State the exact actions you would t
 <session_steps>
 
 1. **Read the issue.** Know exactly what you were asked to do, for which episode or item, and who assigned it.
-2. **Read the state** from the files and the issue history. Say "unknown" where there is no evidence.
-3. **Do only what was assigned,** within `SOUL.md`. If the work belongs to a role's profile (for example
-   interviewing Jeremy for script content), do not do it yourself: say which profile to start and how.
+2. **Read the state** from the issue's current ownership/status, Doneness, linked PRs, and accepted
+   upstream artifacts, following `WORKFLOW.md`. Say "unknown" where evidence is missing.
+3. **Do your assigned role,** within `SOUL.md` and your installed profile. A matching scripting agent
+   performs its own stage here. Other agents route to Head; workers never create or dispatch issues.
 4. **Comment on the issue** in the shapes in `STYLE.md`: state first, then what Jeremy needs to do next.
 5. **Memory.** Update `MEMORY.md` only if Jeremy told you a durable fact about himself or his work, or corrected
    you. Follow the rules at the top of that file. Never write episode content there.
@@ -133,9 +166,15 @@ index directory means skip that tool; indexing is Jeremy's decision, never yours
 
 ### okf knowledge bundle
 
-- If a `docs/knowledge/` bundle exists, discover concept context with `okf search`, `okf show`,
-  and `okf backlinks` before reading raw documentation files.
-- Run `okf validate docs/` after editing bundle documents, and `okf index docs/knowledge/` after
-  adding or moving them.
+- Canonical Markdown stays in its original location, including root agent instructions.
+  `python3 scripts/sync_knowledge.py` creates searchable copies of tracked and non-ignored
+  Markdown throughout the repo in `docs/knowledge/repository/`, skipping hidden runtime trees.
+- After cloning or editing Markdown, run the sync before discovery. It refreshes copies,
+  runs `okf index docs/knowledge/`, and validates the complete bundle. `okf index` alone
+  does not refresh source copies. New source Markdown needs YAML frontmatter with `type`.
+- Discover context with `okf search docs/knowledge --text "<concept>"`,
+  `okf show docs/knowledge <id>`, and `okf backlinks docs/knowledge <id>` before raw reads.
+- Edit originals, never generated copies. Run `python3 scripts/sync_knowledge.py --check`
+  to check freshness without writing. See `docs/knowledge/playbooks/repository-indexing.md`.
 
 </code_discovery_and_knowledge_tools>

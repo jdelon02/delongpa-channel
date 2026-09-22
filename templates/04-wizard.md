@@ -1,3 +1,11 @@
+---
+type: "reference"
+title: "S<SS>E<EE> \u2014 <Working Title> \u00b7 Wizard"
+description: "Repository Markdown source: templates/04-wizard.md."
+tags: ["delongpa", "repository"]
+source_path: "templates/04-wizard.md"
+---
+
 # S<SS>E<EE> — <Working Title> · Wizard
 
 Phase: intake | simplify | gap-check | read-aloud | cues | final-check | in review | returned

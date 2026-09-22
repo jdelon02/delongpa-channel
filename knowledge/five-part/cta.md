@@ -1,3 +1,11 @@
+---
+type: "reference"
+title: "Call to action (part 5 of the five-part structure)"
+description: "Repository Markdown source: knowledge/five-part/cta.md."
+tags: ["delongpa", "repository"]
+source_path: "knowledge/five-part/cta.md"
+---
+
 # Call to action (part 5 of the five-part structure)
 
 Source: https://humbleandbrag.com/blog/how-to-write-a-youtube-script

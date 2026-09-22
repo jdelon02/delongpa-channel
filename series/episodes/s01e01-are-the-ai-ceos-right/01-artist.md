@@ -1,3 +1,11 @@
+---
+type: "reference"
+title: "S01E01 \u2014 Are the AI CEO's right, can you really start and run a successful agentic AI company? Or, are they just blowing smoke up our\u2026 \u00b7 Artist"
+description: "Repository Markdown source: series/episodes/s01e01-are-the-ai-ceos-right/01-artist.md."
+tags: ["delongpa", "repository"]
+source_path: "series/episodes/s01e01-are-the-ai-ceos-right/01-artist.md"
+---
+
 # S01E01 — Are the AI CEO's right, can you really start and run a successful agentic AI company? Or, are they just blowing smoke up our… · Artist
 
 Phase: in review

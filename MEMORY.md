@@ -1,3 +1,11 @@
+---
+type: "project-instructions"
+title: "MEMORY: BurgoyneBlue"
+description: "Repository Markdown source: MEMORY.md."
+tags: ["delongpa", "repository"]
+source_path: "MEMORY.md"
+---
+
 # MEMORY: BurgoyneBlue
 
 <project_source project="delongpa" file="MEMORY" format="hybrid-xml-markdown" />

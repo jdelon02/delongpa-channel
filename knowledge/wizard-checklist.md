@@ -1,3 +1,11 @@
+---
+type: "reference"
+title: "The Wizard hat: retention edit checklist"
+description: "Repository Markdown source: knowledge/wizard-checklist.md."
+tags: ["delongpa", "repository"]
+source_path: "knowledge/wizard-checklist.md"
+---
+
 # The Wizard hat: retention edit checklist
 
 Source: https://humbleandbrag.com/blog/how-to-write-a-youtube-script

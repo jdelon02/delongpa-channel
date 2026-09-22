@@ -1,3 +1,11 @@
+---
+type: "reference"
+title: "Body (part 3 of the five-part structure)"
+description: "Repository Markdown source: knowledge/five-part/body.md."
+tags: ["delongpa", "repository"]
+source_path: "knowledge/five-part/body.md"
+---
+
 # Body (part 3 of the five-part structure)
 
 Source: https://humbleandbrag.com/blog/how-to-write-a-youtube-script

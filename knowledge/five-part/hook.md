@@ -1,3 +1,11 @@
+---
+type: "reference"
+title: "Hook (part 1 of the five-part structure)"
+description: "Repository Markdown source: knowledge/five-part/hook.md."
+tags: ["delongpa", "repository"]
+source_path: "knowledge/five-part/hook.md"
+---
+
 # Hook (part 1 of the five-part structure)
 
 Source: https://humbleandbrag.com/blog/how-to-write-a-youtube-script

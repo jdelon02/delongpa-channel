@@ -1,3 +1,11 @@
+---
+type: "reference"
+title: "Summary (part 4 of the five-part structure)"
+description: "Repository Markdown source: knowledge/five-part/summary.md."
+tags: ["delongpa", "repository"]
+source_path: "knowledge/five-part/summary.md"
+---
+
 # Summary (part 4 of the five-part structure)
 
 Source: https://humbleandbrag.com/blog/how-to-write-a-youtube-script

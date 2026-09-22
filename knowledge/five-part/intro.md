@@ -1,3 +1,11 @@
+---
+type: "reference"
+title: "Introduction (part 2 of the five-part structure)"
+description: "Repository Markdown source: knowledge/five-part/intro.md."
+tags: ["delongpa", "repository"]
+source_path: "knowledge/five-part/intro.md"
+---
+
 # Introduction (part 2 of the five-part structure)
 
 Source: https://humbleandbrag.com/blog/how-to-write-a-youtube-script

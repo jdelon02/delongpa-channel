@@ -1,3 +1,11 @@
+---
+type: "reference"
+title: "S<SS>E<EE> \u2014 <Working Title> \u00b7 Architect"
+description: "Repository Markdown source: templates/02-architect.md."
+tags: ["delongpa", "repository"]
+source_path: "templates/02-architect.md"
+---
+
 # S<SS>E<EE> — <Working Title> · Architect
 
 Phase: intake | inputs | payoffs | setups | tension | sequence | framing | flow-check | in review | returned

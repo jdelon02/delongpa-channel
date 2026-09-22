@@ -1,3 +1,11 @@
+---
+type: "reference"
+title: "S<SS>E<EE> \u2014 <Working Title>"
+description: "Repository Markdown source: templates/episode-entry.md."
+tags: ["delongpa", "repository"]
+source_path: "templates/episode-entry.md"
+---
+
 ### S<SS>E<EE> — <Working Title>
 - Folder: `episodes/s<SS>e<EE>-<slug>/`
 - Audience: <same as series | this episode's audience>

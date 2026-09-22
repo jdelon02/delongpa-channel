@@ -1,3 +1,11 @@
+---
+type: "reference"
+title: "S<SS>E<EE> \u2014 <Working Title> \u00b7 Writer"
+description: "Repository Markdown source: templates/03-writer.md."
+tags: ["delongpa", "repository"]
+source_path: "templates/03-writer.md"
+---
+
 # S<SS>E<EE> — <Working Title> · Writer
 
 Phase: intake | voice | body | frame | hook | completeness | in review | returned

@@ -1,3 +1,11 @@
+---
+type: "reference"
+title: "Voice"
+description: "Repository Markdown source: templates/VOICE.md."
+tags: ["delongpa", "repository"]
+source_path: "templates/VOICE.md"
+---
+
 # Voice
 
 ## In my own words

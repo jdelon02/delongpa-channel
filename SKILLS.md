@@ -1,9 +1,17 @@
+---
+type: "project-instructions"
+title: "SKILLS: BurgoyneBlue"
+description: "Repository Markdown source: SKILLS.md."
+tags: ["delongpa", "repository"]
+source_path: "SKILLS.md"
+---
+
 # SKILLS: BurgoyneBlue
 
 <project_source project="delongpa" file="SKILLS" format="hybrid-xml-markdown" />
 
 Project-level skills for any agent in this project. All follow `SOUL.md`. Role-specific skills (interviewing,
-scoring, coordinating) live in each profile's own `SKILLS.md`, and the process is in `WORKFLOW.md`. Do not
+PR review, coordinating) live in each installed profile's own `SKILL.md`, and the process is in `WORKFLOW.md`. Do not
 restate either.
 
 ---
@@ -16,23 +24,20 @@ restate either.
 
 ### Steps
 
-1. Read the issue you were given, and its comments.
-2. If it names an episode, read that episode's entry and `Pipeline:` line in `series/SERIES.md`, and the
-   `Phase:` line of each stage output that exists:
-
-```bash
-EP=series/episodes/<folder>
-grep -n "^- Pipeline:" series/SERIES.md
-grep -n "^Phase:" $EP/0*.md
-ls series/head-pending 2>/dev/null
-```
-
-3. Say what is known and what is unknown. A missing file or entry means "unknown", not "not started".
+1. Read the injected issue and history: owner/status, Doneness, episode/stage, repository,
+   `original_assignee_id`, linked PRs, and Head-provided prerequisite merge revisions.
+2. Resolve your role and Hermes profile through WORKFLOW.md's Agent directory. Confirm the runtime
+   identity and current issue owner before editing. Read your own profile instructions.
+3. Follow WORKFLOW.md's Worker start and resume and Branch and worktree protocol. Verify accepted
+   upstream artifacts against fetched main and the issue branch. Read episode files for creative
+   material and `Interview step:` for interview position, never as lifecycle authority.
+4. Report known state and specific missing evidence. Head reconciles mismatches and missing inputs.
 
 ### Rules
 
-- Report states only. Never judge whether a stage is good or ready (the Reviewer's log and the Pipeline box are
-  the only evidence).
+- A missing file means unknown, not not-started. A Done label alone does not prove a merged PR.
+- Preserve old Pipeline, Phase, scoring, review-log, and Head-log material as historical evidence;
+  never update or use it to authorize work under `multica-pr-v1`.
 
 </skill_orient>
 
@@ -40,23 +45,33 @@ ls series/head-pending 2>/dev/null
 
 <skill_route>
 
-**Purpose.** Decide where a request belongs, and send it there instead of doing it.
+**Purpose.** Recognize your own assigned role; route only work outside that role.
 
 ### Steps
 
-| Request | Goes to |
-|---|---|
-| Start, advance, or check on an episode; a held stage; parking | The Head Scriptwriter (`script-head`) |
-| Content for a stage: ideas, structure, drafting, polish | That stage's profile, started with `script-<stage> chat --in <this folder>` |
-| Scoring a stage | The Reviewer, asynchronously, per `WORKFLOW.md` |
-| Anything after `Scripted` (video production) | Not defined. Say so, and ask Jeremy whether he wants to design that workflow first |
-| Changing the process | `propose-process-change` |
+First resolve role, Multica UUID, and Hermes profile through WORKFLOW.md's Agent directory.
+If you already are the matching agent and own the issue, perform the assigned work in this checkout
+under your installed profile. The routing rules do not prohibit an agent from doing its own role.
 
-If a request fits none of these, ask Jeremy one question about what he wants (`STYLE.md`).
+| Request | Action |
+|---|---|
+| New episode, scheduling, revisions, blockers, or work outside your assignment | Head Script Writer coordinates through Multica |
+| Content for your assigned stage, with matching agent/profile and valid prerequisites | Perform the stage here; load your own installed profile's instructions |
+| Content for another role, or a request received by a general agent | Report it to Head Script Writer for assignment to the mapped stage agent |
+| PR review | The Reviewer, assigned by the worker's verified submission handoff under WORKFLOW.md |
+| Video production after scripting | Not defined; ask Jeremy whether to design that workflow |
+| Process change | `propose-process-change`, unless Jeremy has already authorized this change |
+
+If a request fits none of these, ask Jeremy one focused question (`STYLE.md`).
 
 ### Rules
 
-- Never do a stage profile's work yourself, even if it looks quick.
+- Never take over another role's work. Do perform your own authorized role in the assigned checkout.
+- Hermes profile names select runtime context; they are not Multica assignees. Use the directory's
+  exact names in explanations and UUIDs in assignment operations allowed by WORKFLOW.md.
+- Do not tell Jeremy to start another profile when Multica already runs the correct one.
+- Do not launch a second Hermes session or create another checkout to resolve an assignment mismatch.
+  Report the mismatch to Head. Workers do not create issues or dispatch successors.
 
 </skill_route>
 
@@ -93,7 +108,8 @@ If a request fits none of these, ask Jeremy one question about what he wants (`S
 1. Comment on the issue with: what you would change (file and section), why, what it would affect, and what
    would stay the same.
 2. Quote the evidence that prompted it, such as a failure, a confusing rule, or a gap.
-3. Ask Jeremy whether to apply it (`raise-a-decision`). Do not edit anything until he says yes.
+3. Ask Jeremy whether to apply it (`raise-a-decision`) only if he has not already authorized the
+   specific change. Existing explicit authorization remains valid; do not ask again.
 4. If he says yes, make only the change he approved, and say what you changed.
 
 ### Rules
@@ -134,14 +150,16 @@ manual scanning.
 2. If `.code-review-graph/` exists, use its MCP tools for change review and impact questions
    (`detect_changes_tool`, `get_impact_radius_tool`, `query_graph_tool`,
    `semantic_search_nodes_tool`).
-3. If a `docs/knowledge/` bundle exists, use `okf search` / `okf show` / `okf backlinks` for
-   concept context.
+3. Refresh repository-wide Markdown copies with `python3 scripts/sync_knowledge.py`
+   after cloning or editing source Markdown. Use `okf search docs/knowledge`,
+   `okf show docs/knowledge <id>`, and `okf backlinks docs/knowledge <id>` for concept context.
+   Originals stay in place; edit those rather than `docs/knowledge/repository/` copies.
 4. Fall back to grep/find or reading files only for what the indexes do not cover.
 
 ### Rules
 
-- A missing index directory means skip that tool and say nothing of it; never install or index
-  one yourself (`SOUL.md`, rule 2).
+- A missing code index directory means skip that tool and say nothing of it; never install or
+  index one yourself (`SOUL.md`, rule 2). The repository-wide OKF sync above is authorized.
 - Report what the tool showed as evidence, per `STYLE.md` (Citing tool evidence).
 
 </skill_tool_lookup>

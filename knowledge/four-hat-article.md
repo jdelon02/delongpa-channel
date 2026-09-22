@@ -1,3 +1,11 @@
+---
+type: "reference"
+title: "The four-hat YouTube scripting process: extracted notes"
+description: "Repository Markdown source: knowledge/four-hat-article.md."
+tags: ["delongpa", "repository"]
+source_path: "knowledge/four-hat-article.md"
+---
+
 # The four-hat YouTube scripting process: extracted notes
 
 Source: https://humbleandbrag.com/blog/how-to-write-a-youtube-script

@@ -1,3 +1,11 @@
+---
+type: "project-instructions"
+title: "STYLE: BurgoyneBlue"
+description: "Repository Markdown source: STYLE.md."
+tags: ["delongpa", "repository"]
+source_path: "STYLE.md"
+---
+
 # STYLE: BurgoyneBlue
 
 <project_source project="delongpa" file="STYLE" format="hybrid-xml-markdown" />
@@ -44,7 +52,7 @@ How Jeremy sounds on camera is his to define, in his words, and lives in `series
 
 Good:
 - "The Artist stage for S01E02 is in review. Nothing needed from you yet."
-- "I have no review entry for stage 3, so its state is unknown."
+- "I have no linked PR or verified merge for stage 3, so acceptance is unknown."
 - "Next: color grading. That means adjusting the video's colors so shots match. Do you want it done before or
   after the cut is approved?"
 

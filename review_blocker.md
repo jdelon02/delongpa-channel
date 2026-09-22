@@ -1,3 +1,11 @@
+---
+type: "project-instructions"
+title: "Review Cannot Proceed"
+description: "Repository Markdown source: review_blocker.md."
+tags: ["delongpa", "repository"]
+source_path: "review_blocker.md"
+---
+
 ## Review Cannot Proceed
 
 **Issue:** The Artist stage output file does not exist.

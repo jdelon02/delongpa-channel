@@ -1,3 +1,11 @@
+---
+type: "reference"
+title: "S<SS>E<EE> \u2014 <Working Title> \u00b7 Artist"
+description: "Repository Markdown source: templates/01-artist.md."
+tags: ["delongpa", "repository"]
+source_path: "templates/01-artist.md"
+---
+
 # S<SS>E<EE> — <Working Title> · Artist
 
 Phase: intake | dump | payoff | in review | returned

@@ -1,0 +1,6 @@
+# Added by code-review-graph
+.code-review-graph/
+
+# Rebuildable OKF copies and Python caches
+docs/knowledge/repository/
+__pycache__/

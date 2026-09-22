@@ -1,3 +1,11 @@
+---
+type: "reference"
+title: "S<SS>E<EE> \u2014 <Working Title> \u00b7 Head log"
+description: "Repository Markdown source: templates/head-log.md."
+tags: ["delongpa", "repository"]
+source_path: "templates/head-log.md"
+---
+
 # S<SS>E<EE> — <Working Title> · Head log
 
 Append-only. Every entry quotes the user verbatim. Entry types and formats are in
