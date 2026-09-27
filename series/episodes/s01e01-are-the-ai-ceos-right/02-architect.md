@@ -44,7 +44,7 @@ User outlined the following as the foundational elements this episode establishe
 
 ### Loop 3 — Technical decisions (the Grand Payoff loop)
 - Status: draft
-- Payoff:
+- Payoff (approved by user 2026-09-27 "Yes, but..."): "What I really am doing with these videos is chronicling the journey overall, for the people who want to do this themselves ( hopefully using my videos as a reference), and also from a tech perspective I thought people might be interested in the choices I make along the way and the reasons for them."
 - Setup:
 - Tension:
 - Answers:
