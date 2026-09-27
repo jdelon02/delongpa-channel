@@ -27,14 +27,14 @@ Phase: payoffs
 
 ### Loop 1
 - Status: draft
-- Payoff: (pending)
+- Payoff: "A lot of other channels talk about building an AI company, but if you listen to those channels, what you realize is that they are building an agentic workflow that they have very little control or input over. They are not building 'their' brand, they are building an agentic company that produces output that might, or might not, have anything to do with what the actual author has gone through in the process. And then I would discuss that I want to build a company that I can be sure of the output produced, and how I plan to go about that."
 - Setup: (pending)
 - Tension: (pending)
 - Answers:
 
 ### Loop 2
 - Status: draft
-- Payoff: (pending)
+- Payoff: "I don't want to go into specifics of my background yet, but I want to just list out the 'challenges' that I face (keeping my full time job, keeping my school schedule for my master's studies, owning a home, and doing this at the same time). And then, I want to just list out my criteria for success: I stay in control of the output, I set the direction of each episode by being directly involved in the agentic process, running entirely on proxmox so that it can run on something other than my laptop (which I need to use for both work and school, so I want to keep the resourcing off of it), instituting a dev workflow that allows for measuring output of each role the agent is working in, and having a self-learning + rag setup that minimizes errors (and tokens)."
 - Setup: (pending)
 - Tension: (pending)
 - Answers:
@@ -68,9 +68,9 @@ Phase: payoffs
 - Entry #5: "The stick figure could be looking at the 'camera' directly. I would make it a nice large comfy chair, with the stick figure sitting in it with it's feet up on a matching ottoman."
 
 ## Open threads
-- Need to interview for Loop 1 payoff (Why I'm building an agentic company)
-- Need to interview for Loop 2 payoff (My qualifications/background)
-- Need setup and tension for all three loops
+- Need setup and tension for Loop 1 (Why I'm building an agentic company)
+- Need setup and tension for Loop 2 (My qualifications/background)
+- Need setup and tension for Loop 3 (Technical decisions)
 - Need to confirm sequence/order of loops
 - Need framing elements (intro promise, summary takeaways, CTA)
 
