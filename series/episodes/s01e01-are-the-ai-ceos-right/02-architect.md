@@ -39,10 +39,11 @@ Phase: setups
 ### Loop 2
 - Status: draft
 - Payoff: "I don't want to go into specifics of my background yet, but I want to just list out the 'challenges' that I face (keeping my full time job, keeping my school schedule for my master's studies, owning a home, and doing this at the same time). And then, I want to just list out my criteria for success: I stay in control of the output, I set the direction of each episode by being directly involved in the agentic process, running entirely on proxmox so that it can run on something other than my laptop (which I need to use for both work and school, so I want to keep the resourcing off of it), instituting a dev workflow that allows for measuring output of each role the agent is working in, and having a self-learning + rag setup that minimizes errors (and tokens)."
-- Setup: (pending)
-- Tension: (pending — answer recorded, awaiting setup before drafting)
+- Setup: "That defining an agentic company that meets that criteria is way harder than other channels suggest it is."
+- Tension: "For Loop 2, the tension is building this while maintaining/continuing all my other commitments. I don't plan to leave my job until this agentic company starts to make money, so the tension is going be when is the setup of this agentic company 'done' being built to the point that it can start to build out some of the ideas for products/services I have had over the years."
 - Answers:
   - A2.1 (tension, 2026-09-27): "For Loop 2, the tension is building this while maintaining/continuing all my other commitments. I don't plan to leave my job until this agentic company starts to make money, so the tension is going be when is the setup of this agentic company 'done' being built to the point that it can start to build out some of the ideas for products/services I have had over the years."
+  - A2.2 (setup, 2026-09-27): "That defining an agentic company that meets that criteria is way harder than other channels suggest it is."
 
 ### Loop 3
 - Status: draft
