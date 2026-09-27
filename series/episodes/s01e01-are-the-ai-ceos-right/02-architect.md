@@ -6,17 +6,21 @@ tags: ["delongpa", "episode", "architect"]
 source_path: "series/episodes/s01e01-are-the-ai-ceos-right/02-architect.md"
 ---
 
-# S01E01 — What on earth have I signed up for · Architect
+# S01E01 — Episode 1 - Foundations · Architect
 
 Interview step: inputs
-Phase: inputs
+Phase: payoffs
 
 ## Inputs
-- Title: "What on earth have I signed up for"
+- Title: "Episode 1 - Foundations"
 - Story spine: Situation: "AI CEOs claim that anyone can build the next billion dollar company without any humans." Desire: "I want to test that theory and see what happens if we try and build it." Conflict: "The gap between the claim and what you can realistically build while balancing your job and studies, and while doing this on a shoestring budget (which is why I don't just do the whole thing with Claude Fable or Codex Astra models). Also, another conflict that I want to start documenting; the conflict of building an agentic company while still maintaining the control of the output (products, videos, etc…) because I live in the real world where everything is defined and developed based on requirements, consistency with previous/existing systems matters, and to client specs. I am not just trying to build something via vibe coding and call it a day." Change: "You decide to try building it yourself, documenting the journey." Result: [This is what the episode will explore—the answer comes through the process]
-- Viewer questions: (to be interviewed)
-- Target length: 10-15 minutes (from series guidance)
-- Loop count: 3 (confirmed by user)
+- Viewer questions:
+  1. "I wonder what this is about"
+  2. "I wonder how he plans to build the agentic company?"
+  3. "I wonder how this will compare to the other videos I have watched on similar topics?"
+  4. "I wonder what this guy will do differently than everyone else, or is it going to turn out to just be more AI Slop in the end?"
+- Target length: 10-15 minutes
+- Loop count: 3
 - Source: 01-artist.md (Grand Payoff: entry #1)
 
 ## Loops
