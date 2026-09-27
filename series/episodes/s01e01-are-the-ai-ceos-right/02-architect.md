@@ -33,6 +33,7 @@ Phase: setups
 - Answers:
   - A1 (payoff, 2026-09-27): "A lot of other channels talk about building an AI company, but if you listen to those channels, what you realize is that they are building an agentic workflow that they have very little control or input over. They are not building 'their' brand, they are building an agentic company that produces output that might, or might not, have anything to do with what the actual author has gone through in the process. And then I would discuss that I want to build a company that I can be sure of the output produced, and how I plan to go about that."
   - A2 (setup, 2026-09-27): "That I am building this using tools I have found through trial and error, but I am building something that I will still be in control of at the end of the series."
+  - A3 (setup evidence, 2026-09-27): "I could have just built this as a company that produces output that I have no input on, but if this is me 'building my brand', it seems like it should actually be my thoughts and experiences that guide it. So, that's what you will be getting with each episode."
 
 ### Loop 2
 - Status: draft
