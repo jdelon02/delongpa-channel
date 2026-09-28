@@ -1,3 +1,11 @@
+---
+type: "validation"
+title: "Pilot capability test"
+description: "Validation source for scriptwriting: docs/validation/pilot-capability-test.md."
+tags: ["scriptwriting", "docs"]
+source_path: "docs/validation/pilot-capability-test.md"
+---
+
 # Pilot Capability Test
 
 ## Purpose
