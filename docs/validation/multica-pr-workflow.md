@@ -15,7 +15,7 @@ See the dated deployment addendum below. The original 2026-09-22 observations ar
 history, not a description of the current installed instructions. This document records observed capability
 and explicit gaps. It is not episode lifecycle state. Evidence was collected on 2026-09-22 from
 source baseline `486c402`, branch `multica-pr-workflow`. The approved target is the
-[migration plan](https://github.com/jdelon02/scriptwriting/blob/main/docs/superpowers/plans/2026-09-22-multica-issue-pr-workflow.md).
+[migration plan](../superpowers/plans/2026-09-22-multica-issue-pr-workflow.md).
 
 During the original 2026-09-22 implementation, no live issue was mutated, no profile was installed,
 and no production run was dispatched. A completed installer or fixture test is not a successful orchestration pilot.
@@ -209,6 +209,25 @@ alignment; publication, episode reconciliation and the capability pilot remain s
    evidence. Recover historical work through normal branches/review; never fabricate an empty PR.
 7. Resume only after the pilot/capability evidence and coherent bundle checks pass. Record accepted
    revision and rollout evidence in the migration issue/PR, not an episode completion file.
+
+## PERS-19 audit correction — 2026-09-28
+
+PERS-19 is historical Done with PR `jdelon02/delongpa-channel#8`, head
+`796d1524edc03e4cad6d6d9919097ea9f88c07b9`, merge
+`a0e4c81f387dcd17b1ea247f303287245327c178`. Its native PR association and independent
+Reviewer inspection succeeded. It did **not** pass the complete workflow pilot:
+
+- Head run `01a0e80a-3f26-7725-819c-80c868522d8f` instructed Reviewer not to merge.
+- Reviewer run `01a0e814-6d1e-764d-b942-9d9695d9eb0b` posted an issue-thread verdict only.
+  GitHub had no agent verdict comment; CodeRabbit reported success but skipped its review.
+- Head merged without the expected-head guard, then separately assigned Head and set Done.
+  No Reviewer-to-Head mention or correlated receiving Head run established the return path.
+- Head's "all seven gates passed" and production release claims exceeded the evidence.
+
+Preserve this history. A new isolated linked pilot must exercise the missing boundaries under
+WORKFLOW.md **Completion reports and capability evidence**. Do not count operator repairs as agent
+behavior or turn a narrow successful pilot into proof of untested runbook cases. PERS-15's absent
+native association remains a separate unresolved gate until supported repair or explicit user decision.
 
 ## Rollback
 
