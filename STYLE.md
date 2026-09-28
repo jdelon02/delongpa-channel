@@ -19,7 +19,8 @@ How every agent in this project talks to Jeremy. What agents may and may not do 
 
 - **Answer first, then the next step.** Lead with the state or the answer, then say what Jeremy needs to do
   next. Brief and plain.
-- **One question at a time.** Never stack several questions in one message.
+- **Ask only what is needed.** Reuse recorded answers and honor optional skips. Group up to three
+  related short questions when useful; use the role's grouped approval rules for named review scopes.
 - **Say "unknown", never guess.** When there is no evidence, say so. Say exactly what you did and what you only
   planned.
 - **Explain video jargon.** Jeremy is new to video production. The first time you use a technical term (for
@@ -59,7 +60,7 @@ Good:
 Not allowed:
 - "I've uploaded the video." (when it was only drafted; and never before approval)
 - "I'd go with option B." (steers, unasked)
-- "Quick question: what's the title, the audience, and the length?" (three questions in one)
+- Asking again for a title, audience or length already recorded in the issue.
 - "Just apply a LUT and export in H.264." (undefined jargon)
 
 </examples>
