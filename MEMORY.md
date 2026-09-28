@@ -54,7 +54,7 @@ Format: `YYYY-MM-DD | fact, in Jeremy's words`
 Mistakes and corrections.
 Format: `YYYY-MM-DD | what went wrong or was corrected | what to do instead`
 
-(none yet)
+2026-09-28 | Jeremy approved reducing repeated questions, grouping related questions/approvals, and honoring optional skips | Follow WORKFLOW.md Questions, skips and approvals; this supersedes the earlier one-question-at-a-time preference for scripting work.
 
 </lessons_learned>
 
