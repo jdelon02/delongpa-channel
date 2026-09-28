@@ -4,3 +4,6 @@
 # Rebuildable OKF copies and Python caches
 docs/knowledge/repository/
 __pycache__/
+.env
+.rag/
+__pycache__/
